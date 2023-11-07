@@ -11,3 +11,8 @@ askama = { version = "0.12.1", features = ["markdown"] }
 markdown = "0.3.0"
 rocket = "=0.5.0-rc.3"
 toml_edit = "0.20.7"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
