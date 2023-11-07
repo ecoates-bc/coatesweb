@@ -1,0 +1,39 @@
+/* 
+
+.theme-toggle > * {
+    width: 50%;
+}
+
+.theme-toggle > span:hover {
+    transition-duration: 0.1s;
+}
+
+.theme-toggle > span > img {
+    width: 50%;
+} */
+
+.theme-toggle {
+    width: 25%;
+    margin-left: 1rem;
+}
+
+.theme-toggle button {
+    float: left;
+    width: 25%;
+    background-color: var(--background);
+    border: none;
+}
+
+.theme-toggle button:hover {
+    transform: scale(1.01, 1.5) rotateX(55deg);
+    transform: scale(1.1);
+}
+
+.theme-toggle p {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.theme-toggle img {
+    width: 100%;
+}

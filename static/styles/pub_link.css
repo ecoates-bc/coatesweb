@@ -1,0 +1,39 @@
+.pub-link {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.pub-link > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 2px dashed var(--font);
+    text-decoration: none;
+    color: var(--font);
+    width: 100%;
+    transition-duration: 0.1s;
+    font-size: large;
+    background-color: var(--gray);
+}
+
+.pub-link:hover > div {
+    transform: scale(1.01, 1.10) rotateX(35deg);
+    box-shadow: 0px 10px 0px 5px var(--gray);
+    transition-duration: 0.1s;
+}
+
+.blog-thumbnail-info {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.blog-thumbnail-info img {
+    width: 50%;
+}
+
+.blog-thumbnail-info > * p {
+    text-align: left;
+}

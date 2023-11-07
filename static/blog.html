@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BLOG | EDITH COATES</title>
+        <link rel="stylesheet" href="/static/styles/layout.css" />
+        <script src="/static/lib/htmx.min.js"></script>
+        <script src="/static/lib/colortheme.js"></script>
+    </head>
+    <body>
+        <div class="main-stage">
+            <div hx-get="/static/components/hero.html"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+            
+            <h1>The Edith Coates Blog!</h1>
+            <div hx-get="/blog/year/2023"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+        </div>
+        <div hx-get="/static/components/footer.html"
+            hx-trigger="load"
+            hx-swap="outerHTML"></div>
+    </body>
+</html>

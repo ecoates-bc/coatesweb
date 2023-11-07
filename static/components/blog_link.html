@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <link rel="stylesheet" href="/static/styles/pub_link.css" />
+        <a class="pub-link"
+            href="{{ link }}">
+            {% match thumbnail %}
+                {% when Some with (thumbnail_link) %}
+                <div class="blog-thumbnail-info">
+                    <div>
+                        <img src="{{ thumbnail_link }}" alt="thumbnail" />
+                    </div>
+                    <div>
+                        <p>{{ title }}</p>
+                        <p>{{ date }}</p>
+                        <p>{{ subtitle }}</p>    
+                    </div>
+                </div>
+                {% when None  %}
+                <div>
+                    <p>{{ title }}</p>
+                    <p>{{ date }}</p>
+                    <p>{{ subtitle }}</p>
+                </div>
+            {% endmatch %}
+        </a>
+    </body>
+</html>

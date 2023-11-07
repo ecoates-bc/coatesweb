@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PUBLICATIONS | EDITH COATES</title>
+        <link rel="stylesheet" href="/static/styles/layout.css" />
+        <script src="/static/lib/htmx.min.js"></script>
+        <script src="/static/lib/colortheme.js"></script>
+    </head>
+    <body>
+        <div class="main-stage">
+            <div hx-get="/static/components/hero.html"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+            
+            <h1>Publications</h1>
+            <div hx-get="/publications/year/2023"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+            <div hx-get="/publications/year/2022"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+            <div hx-get="/publications/year/2021"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+        </div>
+        <div hx-get="/static/components/footer.html"
+            hx-trigger="load"
+            hx-swap="outerHTML"></div>
+    </body>
+</html>

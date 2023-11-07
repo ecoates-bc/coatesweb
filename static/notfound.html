@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 | EDITH COATES</title>
+        <link rel="stylesheet" href="/static/styles/layout.css" />
+        <script src="/static/lib/htmx.min.js"></script>
+        <script src="/static/lib/colortheme.js"></script>
+    </head>
+    <body>
+        <div class="main-stage" style="margin-bottom: 5rem;">
+            <div hx-get="/static/components/hero.html" 
+                hx-trigger="load" 
+                hx-swap="outerHTML"></div>
+            
+            <h2>Oh no it's a</h2>
+            <h1 class="not-found">404 not found page!!</h1>
+            <h2>Sorry about that!</h2>
+            <a href="/">Return home</a>
+        </div>
+        <div hx-get="/static/components/footer.html"
+            hx-trigger="load"
+            hx-swap="outerHTML"></div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }} | EDITH COATES</title>
+        <link rel="stylesheet" href="/static/styles/layout.css" />
+        <script src="/static/lib/htmx.min.js"></script>
+        <script src="/static/lib/colortheme.js"></script>
+    </head>
+    <body>
+        <div class="main-stage">
+            <div hx-get="/static/components/hero.html"
+                hx-trigger="load"
+                hx-swap="outerHTML"></div>
+
+            {% match thumbnail %}
+                {% when Some with (thumbnail_link) %}
+                <img src="{{ thumbnail_link }}" alt="thumbnail" />
+                {%when None %}
+            {% endmatch %}
+
+            <h1>{{ title }}</h1>
+            <p>{{ subtitle }}</p>
+            <p>{{ date }}</p>
+
+            <div class="content">
+                {{ content|safe }}
+            </div>
+        </div>
+        <div hx-get="/static/components/footer.html"
+            hx-trigger="load"
+            hx-swap="outerHTML"></div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>{{ year }}</h3>
+        {% for slug in slugs %}
+        <div hx-get="/blog/link/{{ slug }}"
+            hx-trigger="load"
+            hx-swap="outerHTML"></div>
+        {% endfor %}
+    </body>
+</html>

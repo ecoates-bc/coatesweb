@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <link rel="stylesheet" href="/static/styles/pub_link.css" />
+        <a class="pub-link"
+            href="{{ link }}"
+            target="_blank">
+            <div>
+                <p>{{ title }}</p>
+                {{ authors|safe }}
+                <p>{{ venue }}</p>
+            </div>
+        </a>
+    </body>
+</html>

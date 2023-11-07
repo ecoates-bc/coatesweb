@@ -1,0 +1,19 @@
+.helloworld {
+    font-size: xxx-large;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.hello {
+    color: var(--purple);
+    transform: scaleX(1.2) rotate(-2deg);
+    text-shadow: -10px 10px 0px var(--black);
+}
+
+.world {
+    color: var(--blue);
+    transform: scaleY(1.2) rotate(1deg);
+    text-shadow: 10px 10px 0px var(--black);
+}

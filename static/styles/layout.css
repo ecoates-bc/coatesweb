@@ -1,0 +1,52 @@
+body {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'URW Gothic', sans-serif;
+    letter-spacing: 1px;
+    color: var(--font);
+}
+
+.main-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    max-width: 50%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "URW Gothic";
+    src:
+        local("URW Gothic"),
+        url("/static/URWGothic-Book.otf") format("opentype");
+}
+
+.content {
+    font-size: larger;
+    line-height: 2;
+    background-color: var(--gray);
+    padding: 1rem;
+    border: 2px dashed var(--font);
+}
+
+a {
+    color: var(--purple);
+}
+
+.content > h2 {
+    margin-top: 3rem;
+    color: var(--green);
+    transform: scale(1.5, 1.2);
+    text-shadow: 0px 10px 0px var(--black);
+}
+
+.not-found {
+    color: var(--blue);
+    transform: scale(2.75, 1.75) rotate(-5deg);
+    filter: drop-shadow(-5px 5px 0px var(--gray))
+        drop-shadow(-10px 10px 0px var(--black));
+    padding-bottom: 1rem;
+}
