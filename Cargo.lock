@@ -201,6 +201,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "coatesweb"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "askama",
+ "markdown",
+ "rocket",
+ "toml_edit",
+]
+
+[[package]]
 name = "comrak"
 version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -849,17 +860,6 @@ name = "percent-encoding"
 version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9b2a4787296e9989611394c33f193f676704af1686e70b8f8033ab5ba9a35a94"
-
-[[package]]
-name = "personal_website"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "askama",
- "markdown",
- "rocket",
- "toml_edit",
-]
 
 [[package]]
 name = "pin-project-lite"

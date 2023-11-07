@@ -1,8 +1,0 @@
-services:
-  rocket:
-    build: .
-    entrypoint: ["cargo", "run", "--release"]
-  nginx:
-    build: ./nginx
-    ports:
-      - "3000:80"
