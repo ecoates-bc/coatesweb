@@ -5,6 +5,17 @@
         <link rel="stylesheet" href="/static/styles/layout.css" />
         <script src="/static/lib/htmx.min.js"></script>
         <script src="/static/lib/colortheme.js"></script>
+
+        <!-- Social media stuff -->
+        <meta property="og:title" content="{{title }} | EDITH COATES">
+        <meta property="og:type" content="article" />
+        {% match thumbnail %}
+            {% when Some with (thumbnail_link) %}
+            <meta property="og:image" content="https://www.ecoates.com{{ thumbnail_link }}">
+            <meta name="twitter:card" content="https://www.ecoates.com{{ thumbnail_link }}">
+            {% when None %}
+        {% endmatch %}
+        <meta property="og:description" content="{{ subtitle }}">
     </head>
     <body>
         <div class="main-stage">
