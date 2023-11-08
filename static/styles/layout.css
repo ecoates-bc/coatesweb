@@ -39,8 +39,16 @@ a {
 .content > h2 {
     margin-top: 3rem;
     color: var(--green);
-    transform: scale(1.5, 1.2);
-    text-shadow: 0px 10px 0px var(--black);
+    text-shadow: 0px 10px 0px var(--background);
+    transform: rotate(-1deg);
+    font-size: xx-large;
+}
+
+.content > h3 {
+    color: var(--blue);
+    text-shadow: 0px 10px 0px var(--background);
+    transform: rotate(1deg);
+    font-size: x-large;
 }
 
 .not-found {
