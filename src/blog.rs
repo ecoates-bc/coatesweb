@@ -77,7 +77,7 @@ fn get_blog_article(slug: &str) -> Result<String> {
 #[get("/year/<year>")]
 pub async fn blog_year(year: usize) -> Option<String> {
     let slugs = match year {
-        2023 => vec!["new-website".to_string()],
+        2023 => vec!["ai-2023".to_string(), "new-website".to_string()],
         _ => vec![]
     };
     let blog_block = BlogYearBlock { year, slugs };
